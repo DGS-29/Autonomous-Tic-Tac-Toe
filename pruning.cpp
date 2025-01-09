@@ -142,12 +142,18 @@ int main() //The main function
    int move,choice;
    cout<<"-------------------------TIC TAC TOE-----------------------------------------------------";
    cout<<endl<<"USER--->(O)      CPU------>(X)";
-   cout<<endl<<"SELECT : 1-> Player first 2-> CPU first:";
+   cout<<endl<<"SELECT : 1 for Player first and 2 for CPU first:";
    cin>>choice;
    if(choice == 1)
    {
        draw_board();
-      up:cout<<endl<<"Enter the move:";
+
+      up:cout << endl << "Enter your move (choose a position from 1-9 as shown below):";
+cout << endl << "1|2|3" << endl;
+cout << "-----" << endl;
+cout << "4|5|6" << endl;
+cout << "-----" << endl;
+cout << "7|8|9" << endl;
          cin>>move;
          if(board[move-1]=='*')
          {
@@ -178,6 +184,12 @@ int main() //The main function
             cout<<endl<<"Draw....";
             break;
         }
+        cout << endl << "Enter your move (choose a position from 1-9 as shown below):";
+cout << endl << "1|2|3" << endl;
+cout << "-----" << endl;
+cout << "4|5|6" << endl;
+cout << "-----" << endl;
+cout << "7|8|9" << endl;
 again:  cout<<endl<<"Enter the move:";
         cin>>move;
         if(board[move-1]=='*')
